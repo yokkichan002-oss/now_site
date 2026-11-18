@@ -1,0 +1,350 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --sky-blue: #9BBAD6;      /* Небесно-голубой */
+    --deep-blue: #3A5A78;     /* Глубокий синий */
+    --sage-green: #cde6c6;    /* Шалфейный */
+    --muted-green: #6A7D68;   /* Приглушенный зеленый */
+    --golden-ochre: #D9B878;  /* Золотисто-охристый */
+    --soft-gray: #E5E5E5;     /* Мягкий серый */
+    --lavender: #C5B4E3;      /* Лавандовый */
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--soft-gray);
+}
+
+.main-page {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*header*/
+.header {
+    display:flex;
+    height: 73px;
+    border-bottom: 1px solid #E5E9F2;
+    align-items: center;
+    background-color: var(--sky-blue);
+}
+
+.header-conteiner {
+    width: 1110px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 40px;
+    width: 90px;
+    display: block;
+}
+
+.nav {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    color:var(--deep-blue);
+}
+
+.appstore {
+    margin-left:auto;
+}
+.nav-link {
+    margin-right: 32px;
+    text-decoration: none;
+    color:black;
+
+}
+.nav-link:last-child {
+    margin-right: 0;
+}
+/*Main*/
+
+.main {
+    
+}
+
+.main-container {
+    width: 1110px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 197px;
+    padding-bottom: 97px;
+}
+.main-content {
+    width: 300px;
+}
+
+.main-header {
+    margin: 0;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1.36;
+    color: var(--deep-blue)
+}
+.main-content p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.78;
+}
+.main-img {
+    
+}
+
+.section-divider {
+    text-align: center;
+}
+
+
+.section-divider img {
+    height: auto;
+    width: 500px;
+}
+
+/* Section 1 */
+
+.about-section {
+    background-color: var(--lavender);
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--deep-blue);
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--deep-blue);
+    max-width: 700px;
+}
+
+/* Section 2 */
+
+.about-section2 {
+    background-color: var(--sage-green);
+    position: relative;
+    padding: 80px 0 350px 0;
+}
+
+.section-title2 {
+    font-size: 36px;
+    color: var(--deep-blue);
+    margin-bottom: 20px;
+}
+
+.text-section2 {
+    gap: 30px;
+    display: flex;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--deep-blue);
+    max-width: 1000px;
+    list-style: none;
+}
+
+.li-section2 {
+    background-color: var(--golden-ochre);
+    border-radius: 10px;
+    width: 800px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--deep-blue);
+}
+
+.section-container2 {
+    width: 1110px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    padding-top: 197px;
+    padding-bottom: 97px;
+    flex-direction: column;
+    background-color: #FFFFFF; /* Белый фон, чтобы выделить блок на шалфейном */
+    padding: 40px; /* Воздух внутри рамки */
+    border: 2px solid var(--golden-ochre); /* Золотистая рамка */
+    border-radius: 15px; /* Скругленные углы, как в аниме */
+}
+
+.html1 {
+    width: 90px;
+    align-items: center;
+    display:flex;
+}
+
+.css1 {
+    width: 90px;
+    align-items: center;
+    display:flex;
+}
+
+.section-divider1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+.section-divider1 img {
+    height: auto;
+    width: 500px;
+}
+
+/* Footer */
+
+.footer {
+    height: 72px;
+    background-color: #0B0D17;
+    color: #D9DBE1;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1110px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+.footer-socials {
+
+}
+
+/*  Card container  */
+
+/* Контейнер для всех карточек (чтобы они стояли в ряд, если их будет несколько) */
+.projects-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* Чтобы на маленьких экранах карточки переносились */
+    padding: 40px 0;
+}
+
+/* Сама карточка */
+.project-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px; /* Фиксированная ширина для аккуратности */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(58, 90, 120, 0.15); /* Мягкая синяя тень */
+    transition: transform 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Эффект при наведении: карточка чуть всплывает */
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Картинка внутри карточки */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Превращаем ссылку в кнопку */
+.project-card a {
+    display: inline-block;
+    background-color: var(--golden-ochre);
+    color: var(--deep-blue);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: var(--deep-blue);
+    color: #FFFFFF;
+}
+
+.project-card p {
+    color: var(--deep-blue);
+    font-size: 14px;
+    margin: 0;
+}
+
+/*card2*/
+
+.project-card1 {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px; /* Фиксированная ширина для аккуратности */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(58, 90, 120, 0.15); /* Мягкая синяя тень */
+    transition: transform 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Эффект при наведении: карточка чуть всплывает */
+.project-card1:hover {
+    transform: translateY(-5px);
+}
+
+/* Картинка внутри карточки */
+.project-card1 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Превращаем ссылку в кнопку */
+.project-card1 a {
+    display: inline-block;
+    background-color: var(--golden-ochre);
+    color: var(--deep-blue);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card1 a:hover {
+    background-color: var(--deep-blue);
+    color: #FFFFFF;
+}
+
+.project-card1 p {
+    color: var(--deep-blue);
+    font-size: 14px;
+    margin: 0;
+}
+.section-title3{
+    font-size: 36px;
+    color: var(--deep-blue);
+    text-align: center;
+}

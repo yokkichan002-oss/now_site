@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" -->
+    <title>Визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="main-page">
+    <header class="header">
+        <div class="header-conteiner">
+            <div class="logo">
+                <img src="fr.png" alt="logo">
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">О себе</a>
+                <a href="#about1" class="nav-link">Навыки</a>
+                <a href="#about2" class="nav-link">Мои работы</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1 class="main-header">Привет, я Aiko</h1>
+                <p>Изучаю верстку сайтов и делаю свои первые проекты.</p>
+            </div>
+        <div class="main-img">
+            <img src="img.png" alt="картинка">
+        </div>
+        </div>
+        <div class="section-divider">
+        <img src="sdf.png" alt="divider">
+</div>
+    </main>
+    
+    <section id="about" class="about-section">
+        <div class="main-container"> <!-- Используем тот же контейнер для ровных отступов -->
+            <h2 class="section-title">Обо мне</h2>
+            <p class="section-text">
+                Привет! Я Aiko, студент и начинающий веб-разработчик. Я не строю жестких планов на 10 лет вперед, вместо этого я фокусируюсь на качестве каждого дня. Для меня обучение коду — это такая же естественная привычка, как и мои регулярные домашние тренировки. Я верю, что маленькие, но ежедневные шаги приводят к крутым результатам. Сейчас я углубляюсь в HTML и CSS, чтобы создавать чистые, удобные и эстетичные сайты.
+            </p>
+        </div>
+        <div class="section-divider">
+        <img src="sdf.png" alt="divider">
+    </section>
+
+    <section id="about1" class="about-section2">
+        <div class="section-container2"> <!-- Используем тот же контейнер для ровных отступов -->
+            <h2 class="section-title2">Навыки</h2>
+            <ul class="text-section2">
+                <li class="li-section2"><img src="css3.png" alt="iconhtml" class="css1"> CSS
+                    <span class="skill">Стилизация</span>
+                </li>
+                <li class="li-section2"> <img src="html.png" alt="iconhtml" class="html1">
+                     
+                    HTML
+                    <span class="skill">Структура</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="section-divider1">
+            <img src="sdf.png" alt="divider">
+        </div>
+    </section>
+    
+<section id="about2" class="projects-section">
+    <!-- 1. Заголовок вынесен ОТДЕЛЬНО. Он блочный и сам займёт всю ширину сверху -->
+    <h3 class="section-title3">МОИ РАБОТЫ</h3>
+    
+    <!-- 2. Контейнер только для карточек, чтобы они встали в ряд -->
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="firstsite.jpg" alt="Скрин сайта">
+            <a href="https://yokkichan002-oss.github.io/my-first-site/">Сайт кнопка</a>
+            <p>Мой первый сайт. Верстал на HTML и CSS, немного работал с JS (пока только изучаю).</p>
+        </div>
+        
+        <!-- Обрати внимание: здесь лучше использовать тот же класс project-card, 
+             чтобы стили применились к обеим карточкам одинаково! -->
+        <div class="project-card">
+            <img src="twosite.jpg" alt="Скрин сайта">
+            <a href="https://yokkichan002-oss.github.io/site_2/">Бенто сайт</a>
+            <p>Мой второй сайт. Использовал HTML, CSS, JS (с помощью ИИ).</p>
+        </div>
+    </div>
+</section>
+
+        
+        <!-- <div class="section-divider2">
+            <img src="sdf.png" alt="divider">
+        </div> -->
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>© 2026 Сайт визитка, права не защищены, защищайте их сами!</p>
+            </div>
+            <div class="footer-socials">
+                СОЦ ИКОНКИ
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
